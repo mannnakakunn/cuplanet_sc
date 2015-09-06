@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cupnoodle.name %>
+</p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @cupnoodle.review %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @cupnoodle.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_cupnoodle_path(@cupnoodle) %> |
+<%= link_to 'Back', cupnoodles_path %>
