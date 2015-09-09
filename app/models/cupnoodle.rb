@@ -1,4 +1,5 @@
 class Cupnoodle < ActiveRecord::Base
-	belongs_to :user
+	has_many :evaluations
+    has_many :users, through: :cupnoodle_has_users
     validates :review, length: { maximum: 140 }
 end

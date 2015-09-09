@@ -7,5 +7,6 @@ class CreateCupnoodles < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :cupnoodles, [:user_id, :created_at]
   end
 end
